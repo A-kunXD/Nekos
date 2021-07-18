@@ -71,7 +71,6 @@ hr {
 
 .guide {
     display: none;
-    float: left;
     /* width: 50%; */
     margin: auto;
     width: fit-content;
