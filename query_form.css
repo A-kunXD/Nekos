@@ -1,8 +1,22 @@
 /* CSS for Query form */
 
+#logo {
+    width: 50px;
+    margin-right: 1.5rem;
+    display: inline-block;
+}
+
+#header {
+    width: fit-content;
+    width: -moz-fit-content;
+    display: inline-block;
+    font-size: 55px;
+    vertical-align: top;
+}
+
 #query-images-container {
     margin: 0 0.4rem;
-    width: 25rem;
+    width: 16rem;
     float: right;
 }
 
@@ -51,7 +65,6 @@ label {
 #viewQuery {
     background-color: #ECDAD9;
 }
-
 
 #arrowUp {
     padding-left: 1rem;

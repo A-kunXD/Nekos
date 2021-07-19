@@ -21,8 +21,8 @@ function edit() {
 }
 
 function send() {
-    var subject = "Query";
-    var yourMessage = "";
+    let subject = "Query";
+    let yourMessage = "";
     yourMessage = "Name: " + document.queryform.elements[1].value +
         "\n Email: " + document.queryform.elements[2].value +
         "\n Query Theme: " + getRadioValue(document.getElementsByName("queryTheme")) +
