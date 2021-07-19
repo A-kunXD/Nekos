@@ -1,0 +1,169 @@
+<!doctype>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Neko Images</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<style>
+			h1 {
+				text-align: center;
+			}
+			#output{
+				text-align: right;
+			}
+			.thumbnail {
+				float: left;
+				padding: 5px;
+				margin: 1px;
+				transition: top ease 0.5s;
+			}
+			.thumbnail:hover {
+				margin-top: 25px;
+			}
+			.description {
+				text-align: center;
+			}
+			.thumbnail img {
+				width:  178px;
+				height: 178px;
+				object-fit: cover;
+				overflow: hidden;
+				border: 4px solid #fff; 
+				box-shadow: 0px 5px 25px rgba(0,0,0,0.5);
+				display: inline;
+				
+			}
+			
+			#largeImage img {
+				width: 50%;
+				height: 50%;
+				object-fit: cover;
+				overflow: hidden;
+				border: 4px solid #fff;
+				box-shadow: 0px 5px 25px rgba(0,0,0,0.5);
+				float: left;
+				margin: 20px 0;
+			}
+			
+			#largeImage {
+				text-align: center;
+				padding	: 0 20px;
+				font-size: 25px;
+			}
+			
+			#largeImage h1{
+				margin-top:15%;;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">					
+					<form>
+						<br>
+						<div id="dropMenu">
+						
+							<div id="bg">
+								<label>Choose page background colour:</label>
+								<select name="backgroundColour" id="backgroundColour" onchange="CheckOptions(this.form)">
+									<option value="black">Black</option>
+									<option value="pink">Pink</option>
+									<option value="brown">Brown</option>
+									<option value="white">White</option>
+									<option value="yellow">Yellow</option>
+									<option value="dodgerblue">dodger blue</option>
+									<option value="skyblue">sky blue</option>
+								</select>
+							</div>
+							
+							<br>
+							
+							<label>Choose page text colour:</label>
+							<select name="textColour" id="textColour" onchange="CheckText(this.form)">
+									<option value="black">Black</option>
+									<option value="pink">Pink</option>
+									<option value="brown">Brown</option>
+									<option value="white">White</option>
+									<option value="yellow">Yellow</option>
+									<option value="dodgerblue">dodger blue</option>
+									<option value="skyblue">sky blue</option>
+							</select>
+						</div>
+						
+						<br style="clear:both" />
+						<hr>
+						
+						<div id="largeImage">
+							<img id="choiceImg">
+							<br>
+							<div id="output"> </div>
+						</div>
+						
+					</form>
+					
+					<br style="clear:both" />
+										
+					<div class="thumbnail" id="t1" onclick="getImage('images/white_shoes.jpg', 'White Shoes');">
+						<img id="img1" src="images\white_shoes.jpg" alt="White Shoes">
+						<div class="description">
+							<h2>White Shoes</h2>
+						</div>
+					</div>
+					<div class="thumbnail" id="t2" onclick="getImage('images/red_shoes.jpg', 'Red Shoes');">
+						<img id="img2" src="images\red_shoes.jpg" alt="Red Shoes">
+						<div class="description">
+							<h2>Red Shoes</h2>
+						</div>
+					</div>
+					<div class="thumbnail" id="t3" onclick="getImage('images/black_shoes.jpg', 'Black Shoes');">
+						<img id="img3" src="images\black_shoes.jpg" alt="Black Shoes">
+						<div class="description">
+							<h2>Black Shoes</h2>
+						</div>
+					</div>
+					<div class="thumbnail" id="t4" onclick="getImage('images/green_shoes.jpg', 'Green Shoes');">
+						<img id="img4" src="images\green_shoes.jpg" alt="Green Shoes">
+						<div class="description">
+							<h2>Green Shoes</h2>
+						</div>
+					</div>
+					<div class="thumbnail" id="t5" onclick="getImage('images/blue_shoes.jpg', 'Blue Shoes');">
+						<img id="img5" src="images\blue_shoes.jpg" alt="Blue Shoes">
+						<div class="description">
+							<h2>Blue Shoes</h2>
+						</div>
+					</div>
+		</div>
+		
+		<br style="clear:both" />
+		<hr>
+		<br>
+		<a href="">Page Editor - Student 4 - Ahmed Adnan Azmi</a>
+						
+					<script>
+					
+					function getSelectedValue(selectList){
+						return selectList[selectList.selectedIndex].value;
+					}
+					
+					function CheckOptions(formRef){
+						document.body.style.backgroundColor = getSelectedValue(backgroundColour);
+					}
+					
+					function CheckText(formRef){
+						document.body.style.color = getSelectedValue(textColour);
+					}
+					
+					
+					function getImage(imageName, imageText){
+						document.getElementById("choiceImg").src = imageName;
+						document.getElementById("choiceImg").alt = imageText;
+						document.getElementById("output").innerHTML = '<h1>' + imageText + '<h1>';
+							
+					}
+					
+						
+					</script>
+	</body>
+</html>
