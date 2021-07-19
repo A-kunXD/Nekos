@@ -10,6 +10,9 @@ function validAndSummary() {
         document.getElementById("queryform").style.display = "none";
         document.getElementById("summaryView").style.display = "block";
     }
+    else {
+        alert("The query form hasn't been filled correctly. Please recheck.")
+    }
 }
 
 function edit() {
@@ -18,18 +21,16 @@ function edit() {
 }
 
 function send() {
-    Email.send({
-        // Host: "smtp.gmail.com",
-        // Username: "sender@email_address.com",
-        Password: "Enter your password",
-        To: 'receiver@email_address.com',
-        From: "sender@email_address.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
+    var subject = "Query";
+    var yourMessage = "";
+    yourMessage = "Name: " + document.queryform.elements[1].value +
+        "\n Email: " + document.queryform.elements[2].value +
+        "\n Query Theme: " + getRadioValue(document.getElementsByName("queryTheme")) +
+        "\n Query Details: " + document.getElementById("queryDetails").value;
+    document.location.href = "mailto:sarayusri17@gmail.com?subject="
+        + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(yourMessage);
+    alert("Your query is ready to be emailed.")
 }
 
 function getRadioValue(radioArray) {

@@ -22,8 +22,7 @@
         </div>
     </div>
 
-    <!-- <h1 id="header"><img src="./images/Logo.jpeg">Neko</h1> -->
-    <h1 id="header">Neko</h1>
+    <h1 id="header"><img id="logo" src="./images/Logo.jpeg">Neko</h1>
 
     <div class="main-images-container">
         <img src="./images/Image 3.jpeg" alt="Girl">
@@ -35,35 +34,36 @@
 
     <div id="description">
         Welcome to Neko!
-        <div style="margin-top: 1rem; font-size: 1.5rem;">We provide an online shoppping experience like no other. Get the best quality sportsgear here!</div>
+        <div style="margin-top: 1rem; font-size: 1.5rem;">We provide an online shoppping experience like no other. Get
+            the best quality sportsgear here!</div>
     </div>
 
     <div class="container2">
         <div class="product">
             <img id="shoes" src="./images/Image 7.webp" alt="shoes">
-            <div class="description">Shoes</div>
+            <div class="imageDescription">Shoes</div>
         </div>
         <div class="product">
             <img id="men" src="./images/Image 8.webp" alt="men">
-            <div class="description">Men</div>
+            <div class="imageDescription">Men</div>
         </div>
         <div class="product">
             <img id="women" src="./images/Image 9.jpg" alt="women">
-            <div class="description">Women</div>
+            <div class="imageDescription">Women</div>
         </div>
         <div class="product">
             <img id="kids" src="./images/Image 10.webp" alt="kids">
-            <div class="description">Kids</div>
+            <div class="imageDescription">Kids</div>
         </div>
         <div class="product">
             <img id="gear" src="./images/Image 11.jpg" alt="sportsgear">
-            <div class="description">Sportsgear</div>
+            <div class="imageDescription">Sportsgear</div>
         </div>
     </div>
 
     <div id="newToWebsite">
         <div style="text-decoration: underline; cursor: pointer;">New to Our Website? Click here for a guide.</div>
-        
+
         <div id="row" style="margin-top: 2rem;">
             <div class="guide" id="column1">
 
@@ -83,7 +83,7 @@
                 <div class="guideDescription">Browse our prodcuts and order them.</div>
 
             </div>
-            <div class="guide" id="column2">
+            <div class="guide" id="column2" style="margin-left: 1rem;">
                 <div class="guideOptions">Diagram SVG:</div>
                 <div class="guideDescription">Here, you can find links to navigate through our website.</div>
 
@@ -117,7 +117,6 @@
         document.getElementById("newToWebsite").addEventListener("click", showGuide);
 
         function showGuide() {
-            // document.getElementsByClassName("guide").style.display = "block";
             document.getElementById("column1").style.display = "inline-block";
             document.getElementById("column2").style.display = "inline-block";
         }
