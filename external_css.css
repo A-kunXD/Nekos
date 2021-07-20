@@ -32,6 +32,9 @@
 body {
     font-family: Sans-serif;
     color: #ECDAD9;
+    background-color: black;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 h1 {
@@ -47,10 +50,10 @@ h1 {
     margin: 0rem;
 }
 
-body {
-    background-color: black;
-    padding: 0rem;
-    margin: 0rem;
+#logo {
+    width: 50px;
+    margin-right: 1.5rem;
+    display: inline-block;
 }
 
 button {

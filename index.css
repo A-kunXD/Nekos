@@ -1,11 +1,5 @@
 /* CSS for Main Page */
 
-#logo {
-    width: 50px;
-    margin-right: 1.5rem;
-    display: inline-block;
-}
-
 #header {
     width: fit-content;
     width: -moz-fit-content;
