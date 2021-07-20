@@ -1,0 +1,42 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-image:url('background5.jpg');
+	background-repeat: round;
+	background-size:cover;
+	background-attachment: fixed;
+
+}
+
+ #frame001{
+	border-radius: 10px;
+    border: 2px solid black;
+    height: 810px;
+    width: 1500px;
+	float:center;
+	margin: auto;
+	padding: 10px;
+
+}
+.buttons001{
+    background-color: dodgerblue;
+    color: white;
+	width: 70px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.buttons002{
+    background-color: light-grey;
+    color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+ #font001{
+     text-align: center;
+	 font-size: 30px;
+     color: white;
+}
+
