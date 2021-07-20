@@ -1,3 +1,4 @@
+// check if user inputs are valid and if so, show summary
 function validAndSummary() {
 
     document.getElementById("warningName").innerHTML = "";
@@ -15,11 +16,13 @@ function validAndSummary() {
     }
 }
 
+//shows form with data filled in
 function edit() {
     document.getElementById("queryform").style.display = "block";
     document.getElementById("summaryView").style.display = "none";
 }
 
+//sends data by email
 function send() {
     let subject = "Query";
     let yourMessage = "";
@@ -33,6 +36,7 @@ function send() {
     alert("Your query is ready to be emailed.")
 }
 
+//gets the radio option selecred
 function getRadioValue(radioArray) {
     let i;
     for (i = 0; i < radioArray.length; i++) {
@@ -43,6 +47,7 @@ function getRadioValue(radioArray) {
     return "";
 }
 
+//checks if input values in form are valid
 function checkValid() {
 
     let alertMsg = "";
@@ -94,6 +99,7 @@ function checkValid() {
     }
 }
 
+//displays summary
 function createSummary() {
     document.getElementById("nameSpan").innerHTML = document.queryform.elements[1].value;
     document.getElementById("emailSpan").innerHTML = document.queryform.elements[2].value;
