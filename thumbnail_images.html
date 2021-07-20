@@ -4,8 +4,6 @@
 		<meta charset="UTF-8"> 
 		<title>Neko Images</title>
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
-		<link rel="stylesheet" href="./external_css.css">
-
 		<style>
 			h1 {
 				text-align: center;
@@ -61,21 +59,25 @@
 		</style>
 	</head>
 	<body>
-
-		<div id="navigationBarWrapper">
-			<div id="navigationBar">
-				<div><a>Presentation Page</a></div>
-				<div><a href="./index.html">Main Page</a></div>
-				<div><a href="./query_form.html">Query Form</a></div>
-				<div><a>Buy Products</a></div>
-				<div><a href="./diagram_svg.html">Diagram SVG</a></div>
-				<div><a href="./quiz.html">Quiz</a></div>
-				<div><a href="./thumbnail_images.html">Thumbnail Images</a></div>
-				<div><a href="./student_details.html">Student Details</a></div>
-			</div>
-		</div>
-
-		<div class="container">					
+		<div class="container">
+					<div id="navigationBarWrapper">
+						<div id="navigationBar">
+							<div><a>Presentation Page</a></div>
+							<div><a href="./index.html">Main Page</a></div>
+							<div><a href="./query_form.html">Query Form</a></div>
+							<div><a>Buy Products</a></div>
+							<div><a href="./diagram_svg.html">Diagram SVG</a></div>
+							<div><a href="./quiz.html">Quiz</a></div>
+							<div><a href="./thumbnail_images.html">Thumbnail Images</a></div>
+							<div><a href="./student_details.html">Student Details</a></div>
+						</div>
+					</div>
+					<hr>
+					<h1>
+						<img id="images/NekoLogo.png" height="100" width="100" alt="Logo">
+						<b id="header">Thumbnail Images</b>
+					</h1>
+					<hr>
 					<form>
 						<br>
 						<div id="dropMenu">
@@ -108,7 +110,7 @@
 						</div>
 						
 						<br style="clear:both" />
-						<hr>
+						
 						
 						<div id="largeImage">
 							<img id="choiceImg">
@@ -119,6 +121,7 @@
 					</form>
 					
 					<br style="clear:both" />
+					<hr>
 										
 					<div class="thumbnail" id="t1" onclick="getImage('images/white_shoes.jpg', 'White Shoes');">
 						<img id="img1" src="images\white_shoes.jpg" alt="White Shoes">
