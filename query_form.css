@@ -14,6 +14,10 @@
     vertical-align: top;
 }
 
+body {
+    background-color: black;
+}
+
 #query-images-container {
     margin: 0 0.4rem;
     width: 16rem;

@@ -43,17 +43,6 @@ function getRadioValue(radioArray) {
     return "";
 }
 
-function checkQuery() {
-    if (getRadioValue(document.getElementsByName("queryTheme")) == "") {
-        alertMsg = "* Required";
-        document.getElementById("warningQueryTheme").innerHTML = alertMsg;
-    }
-    if (document.getElementById("queryDetails").value == "") {
-        alertMsg = "* Required";
-        document.getElementById("warningQueryDetails").innerHTML = alertMsg;
-    }
-}
-
 function checkValid() {
 
     let alertMsg = "";

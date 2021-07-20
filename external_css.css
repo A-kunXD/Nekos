@@ -2,7 +2,6 @@
 
 #navigationBarWrapper {
     background-color: black;
-    /* background-color: #757575; */
     color: #ECDAD9;
 }
 
@@ -30,8 +29,9 @@
     text-decoration: none;
 }
 
-text {
+body {
     font-family: Sans-serif;
+    color: #ECDAD9;
 }
 
 h1 {
