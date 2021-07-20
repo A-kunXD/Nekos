@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Student details</title>
+	<link rel="stylesheet" href="external_css.css">
+	</head>
+<style>
+
+    body{
+	padding: 0;
+	margin: 0;
+	background-image:url('background1.jpg');
+	background-repeat: round;
+	background-size:cover;
+	background-attachment: fixed;
+	}
+    .body.html{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #ddd;
+		width: 90%;
+		height: 90%;
+		text-align: center;
+	}
+	.h1{
+		position: absolute;
+		
+	}
+
+	.textWithBlurredBg{
+		width: 290px;
+		height: 320px;
+		display:inline-block;
+		margin:3px;
+		position:relative;
+		transition: .5s ease-out;
+	}
+	.textWithBlurredBg img{
+		width:290px;
+		height:320px;
+		border-radius:4px;
+		transition:.3s;
+		margin:100px
+	}
+	.textWithBlurredBg:hover img{
+		filter:blur(1px) brightness(60%);
+		box-shadow:0 0 16px cyan;
+		margin:100px;
+	}
+	.textWithBlurredBg :not(img){
+		position: absolute;
+		top: 30%;
+		z-index:1;
+		color:#fff;
+		text-align:center;
+		width:100%;
+		opacity:0;
+		transition:.3s;
+	}
+	.textWithBlurredBg h2{
+		margin:100px;
+	}
+	.textWithBlurredBg p{
+		top:50%;
+		margin:100px;
+	}
+	.textWithBlurredBg:hover :not(img){
+		opacity:1;
+	}
+	.textWithBlurredBg:hover{
+		transform:scale(1.1);
+		background:transparent;
+		z-index:2;
+	}
+</style>
+</head>
+<body>
+    
+	<div id="navigationBarWrapper">
+        <div id="navigationBar">
+            <div><a>Presentation Page</a></div>
+            <div><a href="./index.html">Main Page</a></div>
+            <div><a href="./query_form.html">Query Form</a></div>
+            <div><a>Buy Products</a></div>
+            <div><a href="./diagram_svg.html">Diagram SVG</a></div>
+            <div><a href="./quiz.html">Quiz</a></div>
+            <div><a href="./thumbnail_images.html">Thumbnail Images</a></div>
+            <div><a href="./student_details.html">Student Details</a></div>
+        </div>
+    </div>
+
+
+
+	<h1><img id="logo" src="./Logo.jpeg"  alt="Logo"/><b>Team Members</b></h1>
+	<div class="textWithBlurredBg">
+		<img src="Ranushi.jpg" alt="Ranushi photo"/>
+			<h2>Ranushi Mendis</h2>
+			<p>Student 1</p>
+	</div>
+	<div class="textWithBlurredBg">
+		<img src="Sara.jpg" alt="Sara photo"/>
+			<h2>Sara Hilmy</h2>
+			<p>Student 2</p>
+	</div>
+	<div class="textWithBlurredBg">
+		<img src="Dilshan.jpg" alt="Dilshan photo"/>
+			<h2>Dilshan Perera</h2>
+			<p>Student 3</p>
+	</div>
+	<div class="textWithBlurredBg">
+		<img src="Adnan.jpg" alt="Adnan photo"/>
+			<h2>Ahmed Azmi</h2>
+			<p>Student 4</p>
+	</div>
+</body>
+</html>
