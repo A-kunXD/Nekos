@@ -1,7 +1,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	background-image:url('background quiz.jpg');
+	background-image:url('background\ quiz.JPG');
 	background-repeat: round;
 	background-size:cover;
 	background-attachment: fixed;
