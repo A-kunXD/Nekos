@@ -53,10 +53,14 @@
 				font-size: 25px;
 			}
 			
-			#largeImage h1{
+			#largeImage p{
 				margin-top:15%;;
 			}
 			
+			#Description {
+				font-size: 32px;
+				text-align: center;
+			}
 			
 		</style>
 	</head>
@@ -180,7 +184,7 @@
 					function getImage(imageName, imageText){
 						document.getElementById("choiceImg").src = imageName;
 						document.getElementById("choiceImg").alt = imageText;
-						document.getElementById("output").innerHTML = '<h1>' + imageText + '<h1>';
+						document.getElementById("output").innerHTML = '<p id="Description">' + imageText + '</p>';
 							
 					}
 					
